@@ -1,0 +1,6 @@
+Order Id,Invoice Number,Invoice Date,Item Description,Hsn/Sac,Tax Exclusive Gross,Cgst Tax,Sgst Tax,Igst Tax,Tcs Igst Amount,Ship To State,Customer Bill To Gstid,Transaction Type
+AMZ-7001,INV-7001,2026-05-02,MDF Wall Clock 12 inch,44190900,1500.00,0,0,270.00,7.50,Maharashtra,,Shipment
+AMZ-7002,INV-7002,2026-05-03,Vastu Yantra Frame,44219090,2400.00,216.00,216.00,0,0,Rajasthan,27ABCDE1234F1Z5,Shipment
+AMZ-7003,INV-7003,2026-05-04,Wedding Nameplate Acrylic,44219090,980.00,0,0,176.40,4.90,Kerala,,Shipment
+AMZ-7004,INV-7004,2026-05-05,MDF Wall Clock 12 inch,44190900,1500.00,0,0,270.00,7.50,Maharashtra,,Refund
+AMZ-7005,INV-7005,2026-05-06,Backlit Signage Small,94054090,3100.00,0,0,868.00,15.50,Punjab,,Shipment

@@ -1,0 +1,7 @@
+Order Id,Invoice Number,Order Date,Product Title,HSN Code,Taxable Value,Tax Rate,CGST Amount,SGST Amount,IGST Amount,TCS Amount,Buyer State,Buyer Gstin,Order Status
+FLP-9001,FK-INV-9001,2026-05-02,MDF Wall Clock 12 inch,44190900,1100.00,18,99.00,99.00,0,5.50,Rajasthan,,Sale
+FLP-9002,FK-INV-9002,2026-05-03,Vastu Yantra Frame,44219090,1750.00,18,0,0,315.00,8.75,Telangana,,Sale
+FLP-9003,FK-INV-9003,2026-05-04,Wedding Nameplate Acrylic,44219090,720.00,18,64.80,64.80,0,3.60,Rajasthan,,Sale
+FLP-9004,FK-INV-9004,2026-05-05,Push Pin Travel Map,44211090,4500.00,18,0,0,810.00,22.50,Delhi,07AAACX1234F1Z9,Sale
+FLP-9005,FK-INV-9005,2026-05-06,MDF Wall Clock 12 inch,44190900,1100.00,18,99.00,99.00,0,5.50,Rajasthan,,Cancel
+FLP-9001,FK-INV-9001,2026-05-02,MDF Wall Clock 12 inch,44190900,1100.00,18,99.00,99.00,0,5.50,Rajasthan,,Sale
