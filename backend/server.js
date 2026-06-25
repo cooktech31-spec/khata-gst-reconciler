@@ -1,9 +1,6 @@
-require("dotenv").config();
-const { createApp } = require("./src/app");
+// Prisma client ek hi baar banta hai aur reuse hota hai (connection pool waste nahi hota)
+const { PrismaClient } = require("@prisma/client");
 
-const app = createApp();
-const PORT = process.env.PORT || 4000;
+const prisma = new PrismaClient();
 
-app.listen(PORT, () => {
-  console.log(`GST Reconciler backend chal raha hai: http://localhost:${PORT}`);
-});
+module.exports = { prisma };
