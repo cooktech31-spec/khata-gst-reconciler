@@ -1,27 +1,14 @@
-// =====================================================================
-// app.js — Express app setup
-// =====================================================================
+const express = require('express');
+const cors = require('cors');
 
-const express = require("express");
-const cors = require("cors");
+const app = express();
 
-const { apiKeyAuth } = require("./middleware/apiKeyAuth");
-const uploadRoutes = require("./routes/upload");
-const batchRoutes = require("./routes/batches");
+app.use(cors());
+app.use(express.json());
 
-function createApp() {
-  const app = express();
+app.get('/health', (req, res) => res.json({ status: 'ok', service: 'khata-backend' }));
 
-  app.use(cors()); // production mein origin restrict karna (SETUP.md mein note hai)
-  app.use(express.json());
+app.use('/api/reconcile', require('./routes/upload'));
+app.use('/api/batches', require('./routes/batches'));
 
-  app.get("/health", (req, res) => res.json({ status: "ok" }));
-
-  // Saare /api routes API key se protected hain
-  app.use("/api", apiKeyAuth, uploadRoutes);
-  app.use("/api", apiKeyAuth, batchRoutes);
-
-  return app;
-}
-
-module.exports = { createApp };
+module.exports = app;
