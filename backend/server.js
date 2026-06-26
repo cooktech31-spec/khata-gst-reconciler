@@ -1,6 +1,8 @@
-// Prisma client ek hi baar banta hai aur reuse hota hai (connection pool waste nahi hota)
-const { PrismaClient } = require("@prisma/client");
+require('dotenv').config();
+const app = require('./src/app');
 
-const prisma = new PrismaClient();
+const PORT = process.env.PORT || 4000;
 
-module.exports = { prisma };
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Khata backend ready — port ${PORT}`);
+});
